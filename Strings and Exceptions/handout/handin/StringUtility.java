@@ -17,7 +17,7 @@ public class StringUtility {
     }
 
     public static char maxOccuringCharacter(String sentence) throws IllegalArgumentException {
-        if (sentence == null){
+        if (sentence.equals("")){
             throw new IllegalArgumentException();
         }
         sentence = sentence.replaceAll("[^a-zA-Z ]", " ").replaceAll(" +", "").toLowerCase().trim();
@@ -61,20 +61,22 @@ public class StringUtility {
 
 
     }
-
 /*
+
     //Main tester method when writing the code. Ignore
     public static void main(String[] args){
         String s1= "This   .  Is  a   senTEnce!";
         String s2= "LevEl";
         String s3= "lOser";
         String s4 = "iiijjp";
+        String s5 = "";
 
         System.out.println(s1);
         System.out.println(reverse(s1));
         System.out.println(isPalindrome(s2));
         System.out.println(isPalindrome(s3));
         maxOccuringCharacter(s4);
+        maxOccuringCharacter(s5);
     }
 */
 
